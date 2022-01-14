@@ -31,8 +31,8 @@ namespace pooRPG.src.Entities
         }
         public void displayHp()
         {
-          
-          Console.WriteLine("Hp de "+ this.name+ " é : "+ this.hp); 
+          if (this.hp<0){this.hp = 0.0;}  
+          Console.WriteLine(this.name+ "'s HP is "+ this.hp); 
 
         }
     }

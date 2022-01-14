@@ -9,10 +9,9 @@ namespace pooRPG.src.Entities
         }
         public void fight(Hero hero,int Shots)
         {
-            double damage = this.attack*Shots;
+            double damage = this.attack*Shots*(1+this.level/10)/20;
             Console.WriteLine( this.name + " shoots at "  + hero.name +" "+ Shots + " times. Doing "+ damage + " damage.");
             hero.hp -= damage;
-
         }
     }
 

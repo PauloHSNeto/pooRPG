@@ -7,13 +7,13 @@ namespace pooRPG.src.Entities
         public Worrier(string Name, int Level, string Herotype, double HP, double Attack) : base(Name, Level, Herotype, HP, Attack)
         {
         }
-    
-      public void greeting()
         
+            public void fight(string Weapon, int Hits)
         {
-            Console.WriteLine("Our Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+this.hp + "  " + this.attack);
+
+            Console.WriteLine( this.name + " attack with their "+ Weapon+ " "+ Hits+" times.");
+
         }
-    
     
     }
 

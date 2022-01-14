@@ -8,10 +8,12 @@ namespace pooRPG.src.Entities
         {
         }
 
-        public void greeting()
-        
+
+        public void fight(string Spell)
         {
-            Console.WriteLine("Our Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+this.hp + "  " + this.attack);
+
+            Console.WriteLine( this.name + " casts "+ Spell);
+
         }
     }
 

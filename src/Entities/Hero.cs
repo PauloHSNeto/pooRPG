@@ -22,5 +22,13 @@ namespace pooRPG.src.Entities
         public double  hp { get; set; }
 
         public double  attack { get; set; }
+
+
+        public void greeting()
+        
+        {
+            Console.WriteLine("Our Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+this.hp + "  " + this.attack);
+        }
+
     }
 }

@@ -11,8 +11,8 @@ link.greeting();
 lank.greeting();
 lonk.greeting();
 Console.WriteLine();
-link.fight("Sword",2);
-lank.fight("Fire Ball");
-lonk.fight(9);
+link.fight(lank,"Sword",2);
+lank.fight(lonk,"Fire Ball");
+lonk.fight(link, 9);
 
 

@@ -1,10 +1,14 @@
 ﻿using System;
 using pooRPG.src.Entities;
+Random rnd = new Random();
+
+
+
 
 Console.WriteLine("Hello RPG World!");
-Worrier link = new Worrier("Link", 29, "Worrier",150.0, 10.0);
-Maegi lank = new Maegi("Lank", 25, "Maegi",80.0, 1.0);
-Bandeet lonk = new Bandeet("Lonk", 31, "Bandeet", 100.0, 3.0);
+Worrier link = new Worrier("Link", rnd.Next(25,35), "Worrier", rnd.Next(120,170), 10.0);
+Maegi lank = new Maegi("Lank", rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1.0);
+Bandeet lonk = new Bandeet("Lonk", rnd.Next(25,35), "Bandeet", rnd.Next(90,110), 3.0);
 
 link.greeting();
 lank.greeting();

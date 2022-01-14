@@ -11,8 +11,8 @@ namespace pooRPG.src.Entities
 
         public void fight(string Spell)
         {
-
-            Console.WriteLine( this.name + " casts "+ Spell+". Doing " +(this.hp+this.level)+" damage."  );
+            double damage = (this.hp+this.level)*(1+Spell.Length/10);      
+            Console.WriteLine( this.name + " casts "+ Spell+". Doing " + damage +" damage."  );
 
         }
     }

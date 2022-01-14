@@ -9,8 +9,8 @@ namespace pooRPG.src.Entities
         }
         public void fight(int Shots)
         {
-
-            Console.WriteLine( this.name + " shoots "+ Shots + " times.");
+            double damage = this.attack*Shots;
+            Console.WriteLine( this.name + " shoots "+ Shots + " times. Doing "+ damage + "damage.");
 
         }
     }

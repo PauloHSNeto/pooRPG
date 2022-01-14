@@ -11,7 +11,10 @@ namespace pooRPG.src.Entities
             public void fight(string Weapon, int Hits)
         {
 
-            Console.WriteLine( this.name + " attack with their "+ Weapon+ " "+ Hits+" times.");
+
+
+            double damage = this.attack+this.hp/100;    
+            Console.WriteLine( this.name + " attack with their "+ Weapon+ " "+ Hits+" times. Doing"+ damage+ "damage.");
 
         }
     

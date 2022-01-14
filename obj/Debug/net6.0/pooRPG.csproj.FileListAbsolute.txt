@@ -1,0 +1,15 @@
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\pooRPG.exe
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\pooRPG.deps.json
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\pooRPG.runtimeconfig.json
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\pooRPG.dll
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\ref\pooRPG.dll
+C:\Users\neto.564\pooRPG\bin\Debug\net6.0\pooRPG.pdb
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.csproj.AssemblyReference.cache
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.AssemblyInfoInputs.cache
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.AssemblyInfo.cs
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.csproj.CoreCompileInputs.cache
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.dll
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\ref\pooRPG.dll
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.pdb
+C:\Users\neto.564\pooRPG\obj\Debug\net6.0\pooRPG.genruntimeconfig.cache

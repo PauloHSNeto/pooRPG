@@ -12,7 +12,7 @@ namespace pooRPG.src.Entities
         public void fight(string Spell)
         {
 
-            Console.WriteLine( this.name + " casts "+ Spell);
+            Console.WriteLine( this.name + " casts "+ Spell+". Doing " +(this.hp+this.level)+" damage."  );
 
         }
     }

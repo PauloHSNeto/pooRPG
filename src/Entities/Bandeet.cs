@@ -11,6 +11,7 @@ namespace pooRPG.src.Entities
         {
             double damage = this.attack*Shots;
             Console.WriteLine( this.name + " shoots at "  + hero.name +" "+ Shots + " times. Doing "+ damage + " damage.");
+            hero.hp -= damage;
 
         }
     }

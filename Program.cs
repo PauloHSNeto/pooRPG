@@ -10,9 +10,16 @@ Bandeet lonk = new Bandeet("Lonk", 31, "Bandeet", 120.0, 3.0);
 link.greeting();
 lank.greeting();
 lonk.greeting();
+
 Console.WriteLine();
+
 link.fight(lank,"Sword",2);
 lank.fight(lonk,"Fire Ball");
 lonk.fight(link, 9);
 
+Console.WriteLine();
+
+link.displayHp();
+lank.displayHp();
+lonk.displayHp();
 

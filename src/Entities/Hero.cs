@@ -35,5 +35,17 @@ namespace pooRPG.src.Entities
           Console.WriteLine(this.name+ "'s HP is "+ this.hp); 
 
         }
+        public void survival()
+        {
+            if (this.hp == 0 ){
+                Console.WriteLine(this.name +" is dead." );
+        }   else{
+                Console.WriteLine(this.name +" is alive with "+ this.hp+" HitPoints" );
+
+
+        }
+        
+        }
+        
     }
 }

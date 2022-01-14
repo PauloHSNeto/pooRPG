@@ -9,10 +9,13 @@ namespace pooRPG.src.Entities
         }
     public void heals(Hero worrier,Hero maegi,Hero bandeet )
     {
-        if (worrier.hp < maegi.hp && worrier.hp <bandeet.hp){Console.WriteLine(this.name+ " heals "+ worrier.name); worrier.hp+=20; }
-        else if (maegi.hp < worrier.hp && maegi.hp <bandeet.hp){Console.WriteLine(this.name+ " heals "+ maegi.name);maegi.hp+=20;}
-        else{Console.WriteLine(this.name+ " heals "+ bandeet.name);bandeet.hp+=20;}
-
+        int totalHealed = 0;
+        string weakest =""; 
+        if (worrier.hp < maegi.hp && worrier.hp <bandeet.hp){weakest = worrier.name; worrier.hp+=20; }
+        else if (maegi.hp < worrier.hp && maegi.hp <bandeet.hp){weakest = maegi.name; maegi.hp+=20;}
+        else{weakest=bandeet.name; bandeet.hp+=20;}
+        totalHealed+=20;
+        Console.WriteLine(this.name+" casts heal on "+ weakest );
     }
 
 

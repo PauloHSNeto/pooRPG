@@ -11,31 +11,47 @@ var names = new List<string>{ "Aldwin","Aldwyn ","Anakin ","Atreyu ","Artemis","
 "Willow" ,"Ygritte" ,"Kinsey" };
 
 
+var spells = new List<string>{"Dancing Lights","Eldritch Blast","Fire Bolt","Frostbite","Light","Ray of Frost","Sacred Flame","Shocking Grasp","Thunderclap",
+"Word of Radiance","Booming Blade ","Green-Flame Blade","Lightning Lure","Burning Hands","Chaos Bolt","Chromatic Orb","Cure Wounds","Divine Favor","Earth Tremor",
+"Faerie Fire","Guiding Bolt","Healing Word","Hellish Rebuke","Magic Missile","Searing Smite","Thunderous Smite","Thunderwave","Witch Bolt","Wrathful Smite",
+"Aganazzar's Scorcher","Branding Smite","Continual Flame","Darkness","Flame Blade","Gust of Wind","Melf","Acid Arrow","Moonbeam","Prayer of Healing","Scorching Ray",
+"Shatter","Snilloc","Snowball Swarm","Spiritual Weapon","Warding Wind","Blinding Smite","Crusader's Mantle","Daylight","Fireball","Leomund's Tiny Hut","Lightning Bolt",
+"Mass Healing Word","Melf's Minute Meteors","Sending","Wall of Sand","Wall of Water","Wind Wall","Fire Shield","Ice Storm","Otiluke's Resilient Sphere",
+"Sickening Radiance","Staggering Smite","Storm Sphere","Vitriolic Sphere","Wall of Fire","Bigby's Hand","Cone of Cold","Dawn","Destructive Wave","Flame Strike",
+"Hallow","Holy Weapon","Immolation","Maelstrom","Mass Cure Wounds","Wall of Force","Wall of Light","Wall of Stone","Wrath of Nature","Blade Barrier",
+"Chain Lightning","Contingency","Create Homunculus","Heal","Otiluke's Freezing Sphere","Sunbeam","Wall of Ice","Crown of Stars","Delayed Blast Fireball",
+"Divine Word","Fire Storm","Forcecage","Mordenkainen's Sword","Prismatic Spray","Whirlwind","Earthquake","Maddening Darkness","Sunburst","Telepathy","Meteor Swarm",
+"Power Word Heal"};
+
+var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","javelin","Light hammer","Mace","Quarterstaff","Sickle","Spear","Unarmed strike","Battleaxe",
+"Flail","Glaive ","Greataxe ","Greatsword ","Halberd","Lance","Longsword","Maul ","Morningstar","Pike","Rapier","Scimitar","Shortsword","Trident","War pick",
+"Warhammer","Whip","Blowgun","Crossbow","Crossbow","Longbow","Net"};
+
 Console.WriteLine("Hello RPG World!");
-Worrier link = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(1200,1700), 10);
-Maegi lank = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(800,1000), 1);
-Bandeet lonk = new Bandeet(names[rnd.Next(names.Count)], rnd.Next(25,35), "Bandeet", rnd.Next(900,1100), 3);
-Heelah zolda = new Heelah(names[rnd.Next(names.Count)],rnd.Next(25,35),"Heelah", rnd.Next(500,900),10);
+Worrier warrior = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(120,170), 10);
+Maegi mage = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1);
+Bandeet bandit = new Bandeet(names[rnd.Next(names.Count)], rnd.Next(25,35), "Bandeet", rnd.Next(90,110), 3);
+Heelah healer = new Heelah(names[rnd.Next(names.Count)],rnd.Next(25,35),"Heelah", rnd.Next(35,60),30);
 
 int turn =1;
 
-link.greeting();
-lank.greeting();
-lonk.greeting();
+warrior.greeting();
+mage.greeting();
+bandit.greeting();
 do {
 Console.WriteLine();
 
-link.fight(lank,"Sword",rnd.Next(3,6));
-lank.fight(lonk,"Divine Ice and Fire Beam",rnd.Next(0,200));
-lonk.fight(link, rnd.Next(15,25));
+warrior.fight(mage,weapons[rnd.Next(weapons.Count)],rnd.Next(3,6));
+mage.fight(bandit,spells[rnd.Next(spells.Count)],rnd.Next(0,200));
+bandit.fight(warrior, rnd.Next(15,25));
 
 Console.WriteLine();
-zolda.heals(link,lank,lonk);
+healer.heals(warrior,mage,bandit);
 Console.WriteLine();
 
-link.displayHp();
-lank.displayHp();
-lonk.displayHp();
+warrior.displayHp();
+mage.displayHp();
+bandit.displayHp();
 
 
 turn++;
@@ -43,14 +59,14 @@ Console.WriteLine();
 Console.WriteLine("Turn "+ turn);
 Console.WriteLine();
 
-}while ((link.hp>0 && lank.hp>0 && lonk.hp>0));
+}while ((warrior.hp>0 && mage.hp>0 && bandit.hp>0));
 
 Console.WriteLine("The duel is over: ");
 
-link.survival();
+warrior.survival();
 
-lank.survival();
+mage.survival();
 
-lonk.survival();
+bandit.survival();
 
 

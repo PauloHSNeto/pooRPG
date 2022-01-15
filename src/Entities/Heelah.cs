@@ -11,9 +11,9 @@ namespace pooRPG.src.Entities
     {
         int totalHealed = 0;
         string weakest =""; 
-        if (worrier.hp < maegi.hp && worrier.hp <bandeet.hp){weakest = worrier.name; worrier.hp+=20; }
-        else if (maegi.hp < worrier.hp && maegi.hp <bandeet.hp){weakest = maegi.name; maegi.hp+=20;}
-        else{weakest=bandeet.name; bandeet.hp+=20;}
+        if (worrier.hp < maegi.hp && worrier.hp <bandeet.hp){weakest = worrier.name; worrier.hp+=this.attack; }
+        else if (maegi.hp < worrier.hp && maegi.hp <bandeet.hp){weakest = maegi.name; maegi.hp+=this.attack;}
+        else{weakest=bandeet.name; bandeet.hp+=this.attack;}
         totalHealed+=20;
         Console.WriteLine(this.name+" casts heal on "+ weakest );
     }

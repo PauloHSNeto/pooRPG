@@ -16,7 +16,7 @@ namespace pooRPG.src.Entities
                             warrior.hp -= damage;
             }
             else {
-                            Console.WriteLine( this.name + " shoots at "  + mage.name +" "+ Shots + " times. Doing "+ Math.Round(damage, 2) + " damage.");
+                            Console.WriteLine( this.name + " shoots at "  + mage.name +" with their "+ rangedWeapon +" "+ Shots + " times. Doing "+ Math.Round(damage, 2) + " damage.");
                             mage.hp -= damage;}
 
         }

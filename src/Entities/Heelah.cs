@@ -9,19 +9,17 @@ namespace pooRPG.src.Entities
         }
     public void heals(Hero worrier,Hero maegi,Hero bandeet )
     {
-        int totalHealed = 0;
-        string weakest =""; 
-        if (worrier.hp < maegi.hp && worrier.hp <bandeet.hp){weakest = worrier.name; worrier.hp+=this.attack; }
-        else if (maegi.hp < worrier.hp && maegi.hp <bandeet.hp){weakest = maegi.name; maegi.hp+=this.attack;}
-        else{weakest=bandeet.name; bandeet.hp+=this.attack;}
-        totalHealed+=20;
+        string weakest ="noone"; 
+        if (worrier.hp>0 && worrier.hp < maegi.hp && worrier.hp <bandeet.hp){weakest = worrier.name; worrier.hp+=this.attack; }
+        else if (maegi.hp>0 && maegi.hp < worrier.hp && maegi.hp <bandeet.hp){weakest = maegi.name; maegi.hp+=this.attack;}
+        else if(bandeet.hp>0) {weakest=bandeet.name; bandeet.hp+=this.attack;}
         Console.WriteLine(this.name+" casts heal on "+ weakest );
     }
 
       public void greeting()
         
         {
-            Console.WriteLine("\nThe Healer "+ this.name+ " is at level " + this.level+ ", and will help out the weakest hero on each turn" );
+            Console.WriteLine("\nThe Healer "+ this.name+ " is at level " + this.level+ ", and will help out the weakest hero on each turn, as long as they are all alive." );
         }
 
     }

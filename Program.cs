@@ -33,7 +33,6 @@ Bandeet bandit = new Bandeet(names[rnd.Next(names.Count)], rnd.Next(25,35), "Ban
 Heelah healer = new Heelah(names[rnd.Next(names.Count)],rnd.Next(25,35),"Heelah", rnd.Next(35,60),20);
 
 
-
 int turn =1;
 string warWeapon = weapons[rnd.Next(weapons.Count)];
 warrior.greeting();
@@ -45,34 +44,35 @@ healer.greeting();
 do {
 Console.WriteLine();
 
+Console.WriteLine("Turn "+ turn);
+Console.WriteLine();
+
 
 Console.WriteLine();
 healer.heals(warrior,mage,bandit);
 Console.WriteLine();
 
-warrior.fight(mage,warWeapon,rnd.Next(3,6));
-mage.fight(bandit,spells[rnd.Next(spells.Count)],rnd.Next(0,200));
+warrior.fight(mage,bandit,warWeapon,rnd.Next(3,6));
+mage.fight(bandit,warrior,spells[rnd.Next(spells.Count)],rnd.Next(0,200));
 bandit.fight(warrior,mage, rnd.Next(15,25),rangedWeapons[rnd.Next(rangedWeapons.Count)]);
 
+Console.WriteLine();
 
 warrior.displayHp();
 mage.displayHp();
 bandit.displayHp();
+Console.WriteLine();
 
 
 turn++;
+}while ((warrior.hp>0 && mage.hp>0)||(warrior.hp>0 && bandit.hp>0)||(bandit.hp>0 && mage.hp>0));
 Console.WriteLine();
-Console.WriteLine("Turn "+ turn);
 Console.WriteLine();
-
-}while ((warrior.hp>0 && mage.hp>0 && bandit.hp>0));
 
 Console.WriteLine("The duel is over: ");
 
 warrior.survival();
-
 mage.survival();
-
 bandit.survival();
 
 

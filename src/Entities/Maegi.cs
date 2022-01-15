@@ -8,8 +8,9 @@ namespace pooRPG.src.Entities
         }
         public void fight(Hero hero,string Spell, int SPower)
         {
+            
             double damage = SPower*(1+Spell.Length/3)*(1+this.level)/1000;      
-            Console.WriteLine( this.name + " casts "+ Spell+" at "+hero.name+". Doing " + damage +" damage.");
+            Console.WriteLine( this.name + " casts "+ Spell+" at "+hero.name+". Doing " + Math.Round(damage, 2) +" damage.");
             hero.hp -= damage;
         }
     }

@@ -27,12 +27,12 @@ namespace pooRPG.src.Entities
         public void greeting()
         
         {
-            Console.WriteLine("The Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+this.hp + "  " + this.attack);
+            Console.WriteLine("The Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+Math.Round(this.hp, 2) + "  " + this.attack);
         }
         public void displayHp()
         {
           if (this.hp<0){this.hp = 0.0;}  
-          Console.WriteLine(this.name+ "'s HP is "+ this.hp); 
+          Console.WriteLine(this.name+ "'s HP is "+ Math.Round(this.hp, 2)); 
 
         }
         public void survival()
@@ -40,12 +40,9 @@ namespace pooRPG.src.Entities
             if (this.hp == 0 ){
                 Console.WriteLine(this.name +" is dead." );
         }   else{
-                Console.WriteLine(this.name +" is alive with "+ this.hp+" HitPoints" );
-
-
-        }
+                Console.WriteLine(this.name +" is alive with "+ Math.Round(this.hp, 2)+" HitPoints" );
+                }
         
         }
-        
     }
 }

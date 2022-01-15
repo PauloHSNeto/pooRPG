@@ -27,7 +27,7 @@ namespace pooRPG.src.Entities
         public void greeting()
         
         {
-            Console.WriteLine("The Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ", thier hp and attack are:  "+Math.Round(this.hp, 2) + "  " + this.attack);
+            Console.WriteLine("The Hero "+ this.name+" is a level " + this.level+ " " +this.type+ ".");
         }
         public void displayHp()
         {

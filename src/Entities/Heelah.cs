@@ -18,7 +18,11 @@ namespace pooRPG.src.Entities
         Console.WriteLine(this.name+" casts heal on "+ weakest );
     }
 
-
+      public void greeting()
+        
+        {
+            Console.WriteLine("\nThe Healer "+ this.name+ " is at level " + this.level+ ", and will help out the weakest hero on each turn" );
+        }
 
     }
 

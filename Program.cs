@@ -21,7 +21,7 @@ var spells = new List<string>{"Eldritch Blast","Fire Bolt","Frostbite","Ray of F
 "Chain Lightning","Otiluke's Freezing Sphere","Sunbeam","Crown of Stars","Delayed Blast Fireball",
 "Divine Word","Fire Storm","Mordenkainen's Sword","Prismatic Spray","Whirlwind","Earthquake","Maddening Darkness","Sunburst","Meteor Swarm"};
 var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer","Mace","Quarterstaff","Sickle","Spear","Unarmed strike","Battleaxe",
-"Flail","Glaive ","Greataxe ","Greatsword ","Halberd","Lance","Longsword","Maul ","Morningstar","Pike","Rapier","Scimitar","Shortsword","Trident","War pick",
+"Flail","Glaive","Greataxe","Greatsword ","Halberd","Lance","Longsword","Maul","Morningstar","Pike","Rapier","Scimitar","Shortsword","Trident","War pick",
 "Warhammer","Whip",};
 var rangedWeapons = new List<string>{"Blowgun","Crossbow","Crossbow","Longbow","ShortBow", "Hunting Bow"};
 

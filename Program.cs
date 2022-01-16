@@ -25,10 +25,12 @@ var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","
 "Warhammer","Whip",};
 var rangedWeapons = new List<string>{"Blowgun","Crossbow","Crossbow","Longbow","ShortBow", "Hunting Bow"};
 
-
+int warrior_wins = 0;
+int mage_wins = 0;
+int bandit_wins = 0;
 List<string> winnertypes = new List<string>();
 int tourney = 1;
-while (tourney <2){
+while (tourney <200){
 Console.WriteLine("Hello RPG BattleRoyalle World!");
 Worrier warrior = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(120,170), 10);
 Maegi mage = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1);
@@ -70,9 +72,9 @@ turn++;
 }while ((warrior.hp>0 && mage.hp>0)||(warrior.hp>0 && bandit.hp>0)||(bandit.hp>0 && mage.hp>0));
 Console.WriteLine();
 Console.WriteLine();
-if (warrior.hp != 0) {Console.WriteLine("The duel is over! "+ warrior.name+ " the "+ warrior.type+" has won with "+ warrior.hp + " HitPoints left!!! ");winnertypes.Add(warrior.type);}
-if (mage.hp != 0) {Console.WriteLine("The duel is over! "+ mage.name+ " the "+ mage.type+" has won with "+ mage.hp + " HitPoints left!!! ");winnertypes.Add(mage.type);}
-if (bandit.hp != 0) {Console.WriteLine("The duel is over! "+ bandit.name+ " the "+ bandit.type+" has won with "+ bandit.hp + " HitPoints left!!! ");winnertypes.Add(bandit.type);}
+if (warrior.hp != 0) {Console.WriteLine("The duel is over! "+ warrior.name+ " the "+ warrior.type+" has won with "+ warrior.hp + " HitPoints left!!! ");winnertypes.Add(warrior.type); warrior_wins++ ;}
+if (mage.hp != 0) {Console.WriteLine("The duel is over! "+ mage.name+ " the "+ mage.type+" has won with "+ mage.hp + " HitPoints left!!! ");winnertypes.Add(mage.type);mage_wins++;}
+if (bandit.hp != 0) {Console.WriteLine("The duel is over! "+ bandit.name+ " the "+ bandit.type+" has won with "+ bandit.hp + " HitPoints left!!! ");winnertypes.Add(bandit.type);bandit_wins++;}
 
 tourney++;
 }
@@ -80,9 +82,7 @@ Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
 
-foreach (var item in winnertypes)
-{
-    Console.WriteLine(item+ " is a winner");
-}
 
-
+Console.WriteLine("Warrior wins: "+warrior_wins );
+Console.WriteLine("Mage wins: " +mage_wins);
+Console.WriteLine("Bandit wins: "+ bandit_wins);

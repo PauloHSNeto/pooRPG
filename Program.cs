@@ -26,12 +26,14 @@ var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","
 var rangedWeapons = new List<string>{"Blowgun","Crossbow","Crossbow","Longbow","ShortBow", "Hunting Bow"};
 
 
+List<string> winnertypes = new List<string>();
+int tourney = 1;
+while (tourney <2){
 Console.WriteLine("Hello RPG BattleRoyalle World!");
 Worrier warrior = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(120,170), 10);
 Maegi mage = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1);
 Bandeet bandit = new Bandeet(names[rnd.Next(names.Count)], rnd.Next(25,35), "Bandeet", rnd.Next(90,110), 3);
 Heelah healer = new Heelah(names[rnd.Next(names.Count)],rnd.Next(25,35),"Heelah", rnd.Next(35,60),20);
-
 
 int turn =1;
 string warWeapon = weapons[rnd.Next(weapons.Count)];
@@ -39,7 +41,7 @@ warrior.greeting();
 mage.greeting();
 bandit.greeting();
 
-healer.greeting();
+healer.heelahgreeting();
 
 do {
 Console.WriteLine();
@@ -68,11 +70,19 @@ turn++;
 }while ((warrior.hp>0 && mage.hp>0)||(warrior.hp>0 && bandit.hp>0)||(bandit.hp>0 && mage.hp>0));
 Console.WriteLine();
 Console.WriteLine();
+if (warrior.hp != 0) {Console.WriteLine("The duel is over! "+ warrior.name+ " the "+ warrior.type+" has won with "+ warrior.hp + " HitPoints left!!! ");winnertypes.Add(warrior.type);}
+if (mage.hp != 0) {Console.WriteLine("The duel is over! "+ mage.name+ " the "+ mage.type+" has won with "+ mage.hp + " HitPoints left!!! ");winnertypes.Add(mage.type);}
+if (bandit.hp != 0) {Console.WriteLine("The duel is over! "+ bandit.name+ " the "+ bandit.type+" has won with "+ bandit.hp + " HitPoints left!!! ");winnertypes.Add(bandit.type);}
 
-Console.WriteLine("The duel is over: ");
+tourney++;
+}
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
 
-warrior.survival();
-mage.survival();
-bandit.survival();
+foreach (var item in winnertypes)
+{
+    Console.WriteLine(item+ " is a winner");
+}
 
 

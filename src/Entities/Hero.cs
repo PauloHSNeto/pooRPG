@@ -1,4 +1,5 @@
 using System;
+using pooRPG.src.Entities.HeroTypes;
 
 namespace pooRPG.src.Entities{
     public class Hero{

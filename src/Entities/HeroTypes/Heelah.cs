@@ -1,6 +1,6 @@
 using System;
 
-namespace pooRPG.src.Entities
+namespace pooRPG.src.Entities.HeroTypes
 {
     public class Heelah : Hero{
     public Heelah(string Name, int Level, string Herotype, double HP, double Attack) : base(Name, Level, Herotype, HP, Attack){

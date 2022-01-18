@@ -1,5 +1,7 @@
 ﻿using System;
 using pooRPG.src.Entities;
+using pooRPG.src.Entities.HeroTypes;
+
 Random rnd = new Random();
 
 
@@ -30,7 +32,7 @@ int mage_wins = 0;
 int bandit_wins = 0;
 List<string> winnertypes = new List<string>();
 int tourney = 0;
-while (tourney <50){
+while (tourney <1){
 Console.WriteLine("Hello RPG BattleRoyalle World!");
 Worrier warrior = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(120,170), 15);
 Maegi mage = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1);

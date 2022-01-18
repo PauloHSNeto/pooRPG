@@ -1,6 +1,6 @@
 using System;
 
-namespace pooRPG.src.Entities
+namespace pooRPG.src.Entities.HeroTypes
 {
     public class Bandeet : Hero
     {

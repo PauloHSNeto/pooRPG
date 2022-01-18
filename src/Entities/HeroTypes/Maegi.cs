@@ -1,5 +1,5 @@
 using System;
-namespace pooRPG.src.Entities{
+namespace pooRPG.src.Entities.HeroTypes{
     public class Maegi : Hero{
         public Maegi(string Name, int Level, string Herotype, double HP, double Attack) : base(Name, Level, Herotype, HP, Attack){
         }

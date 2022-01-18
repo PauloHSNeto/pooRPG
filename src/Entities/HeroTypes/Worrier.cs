@@ -1,4 +1,4 @@
-namespace pooRPG.src.Entities
+namespace pooRPG.src.Entities.HeroTypes
 {
     public class Worrier : Hero{
         public Worrier(string Name, int Level, string Herotype, double HP, double Attack) : base(Name, Level, Herotype, HP, Attack){

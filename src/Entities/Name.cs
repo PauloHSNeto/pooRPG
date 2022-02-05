@@ -1,8 +1,11 @@
 using System;
 
                
+namespace pooRPG.src.Entities{
 
-var names = new List<string>{"Aldwin","Aldwyn","Anakin","Atreyu","Artemis","Bastian","Ben","Bronn","Cullen","Daario","Draco","Eddard",
+
+    public class Names{
+public names = new List<string>{"Aldwin","Aldwyn","Anakin","Atreyu","Artemis","Bastian","Ben","Bronn","Culllllen","Daario","Draco","Eddard",
 "Emmett","Eowyn","Falkor","Faramir","Finn","Gandalf","Gendry","Gregor","Han","Jaime","Jaqen","Jorah","Kylo","Legolas","Loras","Luke","Oberyn",
 "Obi","Petyr","Pippin","Poe","Ramsay","Ren","Rool","Roose","Samwise","Sandor","Sirius","Shasta","Stannis","Sulu","Theon","Tirian","Tormund",
 "Tyrion","Tumun","Willow","Bode","Amidala","Aravis","Arwen","Arya","Astoria","Bellatrix","Brienne","Catelyn","Cersei","Cherlindrea","Daenerys",
@@ -24,4 +27,6 @@ var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","
 "Warhammer","Whip",};
 var rangedWeapons = new List<string>{"Blowgun","Crossbow","Crossbow","Longbow","ShortBow", "Hunting Bow"};
 
+    }
 
+}

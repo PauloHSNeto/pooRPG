@@ -3,6 +3,9 @@ using pooRPG.src.Entities;
 using pooRPG.src.Entities.HeroTypes;
 Random rnd = new Random();
 
+
+
+//nomes de heroes spells e weapons
 var names = new List<string>{"Aldwin","Aldwyn","Anakin","Atreyu","Artemis","Bastian","Ben","Bronn","Cullen","Daario","Draco","Eddard",
 "Emmett","Eowyn","Falkor","Faramir","Finn","Gandalf","Gendry","Gregor","Han","Jaime","Jaqen","Jorah","Kylo","Legolas","Loras","Luke","Oberyn",
 "Obi","Petyr","Pippin","Poe","Ramsay","Ren","Rool","Roose","Samwise","Sandor","Sirius","Shasta","Stannis","Sulu","Theon","Tirian","Tormund",
@@ -25,15 +28,13 @@ var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","
 "Warhammer","Whip",};
 var rangedWeapons = new List<string>{"Blowgun","Crossbow","Crossbow","Longbow","ShortBow", "Hunting Bow"};
 
-
-
-
+//initial conditions
 int warrior_wins = 0;
 int mage_wins = 0;
 int bandit_wins = 0;
 List<string> winnertypes = new List<string>();
 int tourney = 0;
-while (tourney <120){
+while (tourney <50){
 Console.WriteLine("Hello RPG BattleRoyalle World!");
 Worrier warrior = new Worrier(names[rnd.Next(names.Count)], rnd.Next(25,35), "Worrier", rnd.Next(120,170), 15);
 Maegi mage = new Maegi(names[rnd.Next(names.Count)], rnd.Next(25,35), "Maegi",rnd.Next(80,100), 1);
@@ -47,7 +48,7 @@ mage.greeting();
 bandit.greeting();
 
 healer.heelahgreeting();
-
+//main game
 do {
 Console.WriteLine();
 
@@ -81,9 +82,12 @@ if (bandit.hp != 0) {Console.WriteLine("The duel is over! "+ bandit.name+" the "
 
 tourney++;
 }
+
+if (tourney>2){
 Console.WriteLine("______________________________________________________________________________________");
 Console.WriteLine();
 
 Console.WriteLine("Warrior wins: "+warrior_wins );
 Console.WriteLine("Mage wins: " +mage_wins);
 Console.WriteLine("Bandit wins: "+ bandit_wins);
+}

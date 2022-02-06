@@ -16,7 +16,7 @@ var spells = new List<string>{"Eldritch Blast","Fire Bolt","Frostbite","Ray of F
 "Word of Radiance","Booming Blade ","Green-Flame Blade","Lightning Lure","Burning Hands","Chaos Bolt","Chromatic Orb","Cure Wounds","Divine Favor","Earth Tremor",
 "Faerie Fire","Guiding Bolt","Hellish Rebuke","Magic Missile","Searing Smite","Thunderous Smite","Thunderwave","Witch Bolt","Wrathful Smite",
 "Aganazzar's Scorcher","Branding Smite","Continual Flame","Darkness","Flame Blade","Gust of Wind","Melf","Acid Arrow","Moonbeam","Scorching Ray",
-"Shatter","Snilloc","Snowball Swarm","Spiritual Weapon","Blinding Smite","Fireball","Lightning Bolt",
+"Shatter","Snillocs","Snowball Swarm","Spiritual Weapon","Blinding Smite","Fireball","Lightning Bolt",
 "Melf's Minute Meteors","Ice Storm",
 "Sickening Radiance","Staggering Smite","Storm Sphere","Vitriolic Sphere","Wall of Fire","Cone of Cold","Destructive Wave","Flame Strike",
 "Hallow","Holy Weapon","Immolatioan","Maelstrom","Wall of Force","Wrath of Nature",

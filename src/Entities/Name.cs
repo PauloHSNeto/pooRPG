@@ -19,7 +19,7 @@ var spells = new List<string>{"Eldritch Blast","Fire Bolt","Frostbite","Ray of F
 "Shatter","Snilloc","Snowball Swarm","Spiritual Weapon","Blinding Smite","Fireball","Lightning Bolt",
 "Melf's Minute Meteors","Ice Storm",
 "Sickening Radiance","Staggering Smite","Storm Sphere","Vitriolic Sphere","Wall of Fire","Cone of Cold","Destructive Wave","Flame Strike",
-"Hallow","Holy Weapon","Immolation","Maelstrom","Wall of Force","Wrath of Nature",
+"Hallow","Holy Weapon","Immolatioan","Maelstrom","Wall of Force","Wrath of Nature",
 "Chain Lightning","Otiluke's Freezing Sphere","Sunbeam","Crown of Stars","Delayed Blast Fireball",
 "Divine Word","Fire Storm","Mordenkainen's Sword","Prismatic Spray","Whirlwind","Earthquake","Maddening Darkness","Sunburst","Meteor Swarm"};
 var weapons = new List<string>{"Club","Dagger","Greatclub","Handaxe","Javelin","Light hammer","Mace","Quarterstaff","Sickle","Spear","Unarmed strike","Battleaxe",

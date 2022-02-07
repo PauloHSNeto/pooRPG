@@ -4,7 +4,7 @@ using System;
 namespace pooRPG.src.Entities{
 
 
-    public class Names{
+    public string Names{
 public names = new List<string>{"Aldwin","Aldwyn","Anakin","Atreyu","Artemis","Bastian","Ben","Bronn","Culllllen","Daario","Draco","Eddard",
 "Emmett","Eowyn","Falkor","Faramir","Finn","Gandalf","Gendry","Gregor","Han","Jaime","Jaqen","Jorah","Kylo","Legolas","Loras","Luke","Oberyn",
 "Obi","Petyr","Pippin","Poe","Ramsay","Ren","Rool","Roose","Samwise","Sandor","Sirius","Shasta","Stannis","Sulu","Theon","Tirian","Tormund",
@@ -15,7 +15,7 @@ public names = new List<string>{"Aldwin","Aldwyn","Anakin","Atreyu","Artemis","B
 var spells = new List<string>{"Eldritch Blast","Fire Bolt","Frostbite","Ray of Frost","Sacred Flame","Shocking Grasp","Thunderclap",
 "Word of Radiance","Booming Blade ","Green-Flame Blade","Lightning Lure","Burning Hands","Chaos Bolt","Chromatic Orb","Cure Wounds","Divine Favor","Earth Tremor",
 "Faerie Fire","Guiding Bolt","Hellish Rebuke","Magic Missile","Searing Smite","Thunderous Smite","Thunderwave","Witch Bolt","Wrathful Smite",
-"Aganazzar's Scorcher","Branding Smite","Continual Flame","Darkness","Flame Blade","Gust of Wind","Melf","Acid Arrow","Moonbeam","Scorching Ray",
+"Aganazzar's Scorcher","Branding Smite","Continual Flame","Darkneass","Flame Blade","Gust of Wind","Melf","Acid Arrow","Moonbeam","Scorching Ray",
 "Shatter","Snillocs","Snowball Swarm","Spiritual Weapon","Blinding Smite","Fireball","Lightning Bolt",
 "Melf's Minute Meteors","Ice Storm",
 "Sickening Radiance","Staggering Smite","Storm Sphere","Vitriolic Sphere","Wall of Fire","Cone of Cold","Destructive Wave","Flame Strike",
